@@ -1,73 +1,60 @@
-# Welcome to your Lovable project
+# 🤖 crafty-agents
 
-## Project info
+[![Minecraft Version](https://img.shields.io/badge/Minecraft-Java%201.20+-green.svg)](https://www.minecraft.net/)
+[![Tech Stack](https://img.shields.io/badge/Tech%20Stack-Vite%20%7C%20React%20%7C%20TS-blue.svg)](#-tech-stack)
+[![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Welcome to **crafty-agents**! Ini adalah repositori *landing page* resmi untuk project AI Agent Minecraft Java yang dirancang untuk beroperasi secara sepenuhnya otonom (*autonomous*). Agent ini mampu masuk ke dalam game, berinteraksi dengan lingkungan, melakukan crafting, membangun struktur, dan mengeksekusi berbagai fitur kompleks lainnya tanpa intervensi manusia.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Fitur Utama (Core Features)
 
-**Use Lovable**
+*   **🤖 Fully Autonomous Agent:** Agent berjalan otomatis menggunakan AI untuk mengambil keputusan di dalam dunia Minecraft Java.
+*   **⚒️ Advanced Crafting System:** Mampu menganalisis kebutuhan *recipe* dan mengumpulkan material untuk melakukan crafting item secara mandiri.
+*   **🏗️ Smart Building:** Membangun struktur bangunan berdasarkan blueprint atau instruksi dinamis secara presisi.
+*   **🌲 Resource Gathering & Exploration:** Agent bisa melakukan mining, logging, dan menjelajahi map untuk mencari resource penting.
+*   **⚡ Real-time Monitoring Web UI:** Landing page dan dashboard ini dibangun untuk memantau status, inventaris, dan aktivitas agent secara langsung.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+Project *landing page* ini dibangun menggunakan teknologi modern:
+*   **Framework:** [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+*   **Bahasa:** [TypeScript](https://www.typescriptlang.org/)
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+*   **Komponen UI:** [shadcn/ui](https://ui.shadcn.com/)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 Memulai (Getting Started)
 
-Follow these steps:
+Untuk menjalankan dan mengembangkan *landing page* ini secara lokal di komputer kamu, ikuti langkah-langkah berikut:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Prasyarat
+Pastikan kamu sudah menginstal [Node.js](https://nodejs.org/) di komputermu.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Langkah Instalasi
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. **Clone Repositori**
+   ```bash
+   git clone [https://github.com/XenchinRyu7/crafty-agents.git](https://github.com/XenchinRyu7/crafty-agents.git)
+   cd crafty-agents
+Install Dependensi
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Bash
+npm install
+Jalankan Server Development
+
+Bash
 npm run dev
-```
+Buka http://localhost:5173 di browser kamu untuk melihat hasilnya.
 
-**Edit a file directly in GitHub**
+💡 Bagaimana Cara Kerjanya?
+AI Agent terhubung ke server Minecraft Java menggunakan protokol network khusus/modded client. Agent menerima input visual/data lingkungan, memprosesnya melalui model AI, dan mengirimkan kembali aksi (movement, clicking, interacting) ke server. Dashboard web di repo ini berfungsi sebagai interface utama bagi pengguna untuk memantau apa yang sedang dilakukan oleh agent secara real-time.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🤝 Kontribusi
+Project ini masih dalam tahap pengembangan aktif. Jika kamu punya ide fitur, menemukan bug, atau ingin berkontribusi pada pengembangan AI Agent maupun Web UI-nya, silakan buka Issue atau kirimkan Pull Request!
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Made with ❤️ by XenchinRyu7
