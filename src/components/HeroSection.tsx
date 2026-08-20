@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -79,18 +80,17 @@ const HeroSection = () => {
           <motion.div
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <a href="#about" className="mc-button">
+            <Link to="/about" className="mc-button">
               Learn More
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/technical"
               className="px-6 py-3 border-2 border-border hover:border-primary/50 rounded-sm font-semibold text-foreground hover:text-primary transition-colors"
             >
               View Documentation
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>

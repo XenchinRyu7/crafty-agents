@@ -1,13 +1,15 @@
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const navItems = [
-  { label: "About", href: "#about" },
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Agents", href: "#agents" },
-  { label: "Examples", href: "#examples" },
-  { label: "Roadmap", href: "#roadmap" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "How It Works", href: "/how-it-works" },
+  { label: "Agents", href: "/agents" },
+  { label: "Examples", href: "/examples" },
+  { label: "Roadmap", href: "/roadmap" },
 ];
 
 const Header = () => {
@@ -18,23 +20,23 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-grass rounded-sm flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-sm">AI</span>
             </div>
             <span className="font-bold text-lg text-foreground">AgentCraft</span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
-                href={item.href}
+                to={item.href}
                 className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -71,18 +73,18 @@ const Header = () => {
         >
           <nav className="container py-4 flex flex-col gap-4">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
-                href={item.href}
+                to={item.href}
                 className="text-muted-foreground hover:text-foreground transition-colors font-medium"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
-            <a href="#" className="mc-button text-center mt-2">
+            <Link to="/technical" className="mc-button text-center mt-2">
               View on GitHub
-            </a>
+            </Link>
           </nav>
         </motion.div>
       )}
